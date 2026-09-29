@@ -14,7 +14,6 @@ body {
 
     div.container {
         width: 780px;
-        border: 1px dotted blue;
         margin: 0 auto; /*tb rl*/
         background-color: white;
 
@@ -125,11 +124,21 @@ body {
 
                                 &.link {
                                     text-align: right;
+
+
+                                    a {
+                                        color: var(--uofuRed);
+                                        text-transform: uppercase;
+                                        text-decoration: none;
+
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+
+                                    }
                                 }
 
-                                a {
-                                    color: var(--uofuRed);
-                                }
+
                             }
 
                             img {
