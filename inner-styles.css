@@ -1,0 +1,94 @@
+:root {
+    --green: #676e3d;
+}
+
+body {
+    background-color: #292827;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+section.container {
+    background-color: #fff;
+    width: 780px;
+    min-height: 600px;
+
+    section.middle {
+        display: flex;
+
+        > * {
+            /*any element that is a child*/
+            border: 1px solid var(--green);
+        }
+
+        section {
+
+            &.left-side {
+                width: 30%;
+                background-color: #f2f1f1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+
+                > nav {
+                    /*> means direct descendants of*/
+                    text-align: right;
+                    font-size: 10px;
+
+                    a {
+                        display: block;
+                        color: black;
+                        text-decoration: none;
+                        border-bottom: 2px solid #686f3e;
+                        text-transform: uppercase;
+                        padding: 10px 0 10px 10px;
+                        font-size: 10px;
+                        &:hover {
+                            background-color: #686f3e;
+                            color: white;
+                        }
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        &:last-of-type {
+                            border-right: none;
+                            padding-right: unset;
+                        }
+                    }
+
+
+                }
+
+                div.links {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+
+            &.right-side {
+                width: 70%;
+                min-height: 600px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 5px 20px;
+            }
+
+        }
+    }
+
+    footer {
+        background-color: var(--green);
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
