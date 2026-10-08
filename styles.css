@@ -6,6 +6,7 @@
 :root {
     --uofuRed: #a12d37;
     /*control command G to select all instances to change*/
+
 }
 
 body {
@@ -17,7 +18,7 @@ body {
         margin: 0 auto; /*tb rl*/
         background-color: white;
 
-
+        /*HOMEPAGE*/
         section.middle {
             padding: 3px 10px;
             background-image: url("files/uofu_medallion_rt.gif");
@@ -150,6 +151,7 @@ body {
 
             }
         }
+
 
         footer {
             background-color: #686f3e;

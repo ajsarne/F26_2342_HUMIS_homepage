@@ -13,7 +13,7 @@ section.container {
     width: 780px;
     min-height: 600px;
 
-    section.middle {
+    section.middle-inner-page {
         display: flex;
 
         > * {
@@ -79,6 +79,34 @@ section.container {
                 justify-content: space-between;
                 flex-direction: column;
                 padding: 5px 20px;
+
+                nav {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 5px;
+                     a {
+                         color: black;
+                         text-decoration: none;
+                     }
+
+                    .top-nav {
+                        text-transform: uppercase;
+
+                    }
+                }
+
+                main {
+                    img {
+                        &.pull-right {
+                            width: 200px;
+                            height: 200px;
+                            float: right;
+                            margin: 0 0 15px ;
+                        }
+
+                    }
+                    /*}*/
+                }
             }
 
         }
