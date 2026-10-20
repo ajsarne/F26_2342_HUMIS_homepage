@@ -1,0 +1,39 @@
+main {
+    img {
+        &.pull-right {
+            float: right;
+            width: 150px;
+            margin: 0 0 15px 15px;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    aside.pull {
+        display: inline-block;
+        /*max-width: 150px;*/
+
+        > img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        &.right {
+            float: right;
+            margin: 0 0 5px 15px;
+        }
+
+        h6 {
+            text-align: center;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+    }
+}

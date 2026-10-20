@@ -1,0 +1,24 @@
+section.horizontal-two-column-layout {
+    border: 3px solid yellow;
+}
+
+aside {
+    border: 3px double red;
+
+    &.left-column {
+        width: 25%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    &.right-column {
+        width: 70%;
+        float: right;
+    }
+}
