@@ -93,17 +93,16 @@ section.container {
                     display: flex;
                     justify-content: flex-end;
                     gap: 5px;
+
                      a {
                          color: black;
                          text-decoration: none;
-                         text-transform: uppercase;
                          border-right: 1px solid #686f3e;
                          font-size: 10px;
                          display: flex;
                          flex-wrap: wrap;
                          align-items: center;
                          padding: 0 5px 0 5px;
-
 
                          &:hover{
                              text-decoration: underline;
@@ -117,12 +116,19 @@ section.container {
 
 
                 }
+                nav.top-nav {
+                    text-transform: uppercase;
+                }
                 nav.middle-nav {
                     padding: 50px 0 10px 0;
                     border-bottom: 2px solid black;
                     display: flex;
                     flex-direction: row;
                     justify-content: left;
+                }
+
+                nav.bottom-nav {
+                    text-transform: lowercase;
                 }
 
                 main {
