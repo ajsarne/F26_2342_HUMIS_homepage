@@ -1,0 +1,51 @@
+:root {
+    --burgundy: #d5222b
+}
+
+body {
+    h1 {
+        color: var(--burgundy);
+        font-size: 2rem;
+    }
+    h3 {
+        color: var(--burgundy);
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 0.75rem;
+
+        &.learn-more {
+            text-align: right;
+
+            a {
+                color: var(--burgundy);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .highlight {
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            font-weight: bold;
+        }
+    }
+}
+
+
