@@ -1,6 +1,6 @@
 /*Notes: block is 100% width container, inline depends on tag container*/
 :root {
-    --uofuRed: #a12d37;
+    --uofuRed: #d5222b;
     /*control command G to select all instances to change*/
 
 }
@@ -13,6 +13,13 @@ body {
         width: 780px;
         margin: 0 auto; /*tb rl*/
         background-color: white;
+
+        header {
+            img {
+                display: block;
+
+            }
+        }
 
         /*HOMEPAGE*/
         section.middle {
@@ -60,7 +67,7 @@ body {
             section.brown-box {
                 background-color: #c8caaf;
                 margin: 5px 0 50px;
-                padding: 10px 10px 10px 15px;
+                padding: 30px;
                 border-radius: 16px;
 
                 aside {
@@ -68,6 +75,11 @@ body {
                     &.left {
                         width: 30%;
                         float: left;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        min-height: 500px;
+
 
                         nav {
                             a {
@@ -95,7 +107,7 @@ body {
                         width: 60%;
                         float: right;
                         background-color: white;
-                        border-radius: 14px;
+
 
                         div.right-box {
 
@@ -104,7 +116,7 @@ body {
                             h3 {
                                 color: #686f3e;
                                 padding-bottom: 10px;
-                                border-bottom: dashed 3px var(--uofuRed);
+                                border-bottom: dashed 1px var(--uofuRed);
                                 font-weight: normal;
                             }
 

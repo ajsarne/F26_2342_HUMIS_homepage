@@ -4,6 +4,7 @@
 
 :root {
     --green: #676e3d;
+    --burgundy: #d5222b
 }
 
 body {
@@ -120,11 +121,22 @@ section.container {
                     text-transform: uppercase;
                 }
                 nav.middle-nav {
+                    text-transform: uppercase;
                     padding: 50px 0 10px 0;
                     border-bottom: 2px solid black;
                     display: flex;
                     flex-direction: row;
                     justify-content: left;
+
+                    a {
+                        color:  var(--burgundy);
+                        border-right: 1px solid var(--burgundy);
+
+                        &:last-of-type {
+                            border-right: none;
+                            padding-right: unset;
+                        }
+                    }
                 }
 
                 nav.bottom-nav {

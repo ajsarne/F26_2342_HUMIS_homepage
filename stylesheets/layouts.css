@@ -51,6 +51,16 @@ section.horizontal-two-column-layout {
                 }
             }
 
+            div.bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+
+                .phone-number .email-address {
+                    margin-bottom: 10px;
+                }
+            }
+
         }
 
         &.right-column {
