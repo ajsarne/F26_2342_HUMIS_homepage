@@ -3,6 +3,15 @@
 }
 
 body {
+    h1, h2, h3, h4, h5, h6, p, a {
+        &.red-highlight {
+            color: var(--burgundy);
+            margin-bottom: 10px;
+        }
+        &.black-font {
+            color: black;
+        }
+    }
     h1 {
         color: var(--burgundy);
         font-size: 2rem;
@@ -29,23 +38,23 @@ body {
         h6 {
             font-size: 1rem;
             margin-bottom: 0;
-
-            &.red-highlight {
-                color: var(--burgundy);
-                margin-bottom: 5px;
-            }
         }
 
         p {
             text-align: justify;
             font-size: 0.75rem;
 
+
+            &.bold {
+                font-weight: bold;
+            }
+
             &.learn-more {
                 text-align: right;
 
                 a {
-                    color: var(--burgundy);
                     text-decoration: none;
+                    color: var(--burgundy);
 
                     &:hover {
                         text-decoration: underline;
@@ -55,6 +64,10 @@ body {
                         font-weight: bold;
                         padding-right: 80px;
                     }
+                }
+
+                &.left-aligned {
+                    text-align: left;
                 }
             }
 

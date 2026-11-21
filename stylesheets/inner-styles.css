@@ -33,6 +33,7 @@ section.container {
 
         section {
 
+
             &.left-side {
                 width: 35%;
                 background-color: #f2f1f1;
@@ -90,6 +91,7 @@ section.container {
                 padding: 5px 20px;
 
 
+
                 > nav {
                     display: flex;
                     justify-content: flex-end;
@@ -144,6 +146,7 @@ section.container {
                 }
 
                 main {
+                    padding: 20px 0 60px 0;
                     img {
                         &.pull-right {
                             width: 200px;
