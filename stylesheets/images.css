@@ -5,6 +5,11 @@ main {
             width: 150px;
             margin: 0 0 15px 15px;
         }
+        &.pull-right-small {
+            float: right;
+            width: 50px;
+            margin: 0 0 15px 15px;
+        }
     }
 
     p {
@@ -16,8 +21,8 @@ main {
         /*max-width: 150px;*/
 
         > img {
-            width: 100%;
-            border-radius: 20px;
+            /*width: 100%;*/
+            border-radius: 10px;
         }
 
         &.left {
@@ -28,6 +33,11 @@ main {
         &.right {
             float: right;
             margin: 0 0 5px 15px;
+        }
+
+        &.small-img {
+            width: 20px;
+            height: 20px;
         }
 
         h6 {

@@ -22,9 +22,26 @@ section.horizontal-two-column-layout {
 
             a {
                 font-size: 8px;
+                text-decoration: none;
+                color: black;
+                display: block;
             }
 
+
+
             div.top {
+                span {
+                    display: block;
+
+                    &.name{
+                        font-weight: bold;
+                    }
+
+                    &.title {
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
                 div.category {
                     a {
                         display: block;
@@ -56,6 +73,18 @@ section.horizontal-two-column-layout {
                 flex-direction: column;
                 justify-content: left;
 
+                span {
+                    display: block;
+
+                    &.name{
+                        font-weight: bold;
+                    }
+
+                    &.title {
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
                 .phone-number .email-address {
                     margin-bottom: 10px;
                 }
@@ -71,6 +100,77 @@ section.horizontal-two-column-layout {
             p {
                 font-size: 12px;
             }
+
+            div.category {
+                p {
+                    display: block;
+                    color: black;
+                    font-size: 0.75rem;
+                    margin: 0;
+
+
+                    &.active {
+                        font-weight: bold;
+                    }
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.75rem;
+                    margin-bottom: 0.2rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &.active {
+                        font-weight: bold;
+                    }
+                }
+
+                &.sub {
+                    margin-left: 10px;
+                    a {
+                        color: var(--burgundy);
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+
+            div.top {
+                display: flex;
+                flex-direction: row;
+            }
+
+            div.bottom {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: left;
+
+                span {
+                    display: block;
+                    text-align: left;
+
+                    &.name{
+                        font-weight: bold;
+                    }
+
+                    &.title {
+                        font-style: italic;
+                    }
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
 
         }
     }
